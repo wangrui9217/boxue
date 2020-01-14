@@ -101,4 +101,10 @@
   width: 50%;
   margin-right: 20rpx;
 }
+.bottom-text.data-v-2883ceb8 {
+  padding: 20rpx 0;
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 24rpx;
+}
 

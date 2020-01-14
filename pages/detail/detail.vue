@@ -31,7 +31,7 @@
             console.log(randomNum, 'randomNum')
             return {
                 title: advList[randomNum],
-                path: '/pages/detai/detail',
+                path: '/pages/detail/detail',
                 imageUrl: '../../static/share.jpg',
                 success: function(res) {
                     console.log("转发回调", res)

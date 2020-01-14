@@ -60,6 +60,7 @@
         <view class="resolve-box" v-if="notice">
             <image :src="notice" class="inner-img" mode="widthFix" @click="goDetail"/>
         </view>
+        <view class="bottom-text">到底了~</view>
 <!--		<button open-type="contact" class="contact">联系我们</button>-->
 <!--		<image src="../../static/temp_adv1.jpg" mode="widthFix"/>-->
 	</view>
@@ -230,5 +231,11 @@
             width: 50%;
             margin-right: 20rpx;
         }
+    }
+    .bottom-text{
+        padding: 20rpx 0;
+        text-align: center;
+        color:#9b9b9b;
+        font-size: 24rpx;
     }
 </style>
