@@ -200,6 +200,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
 var _api = _interopRequireDefault(__webpack_require__(/*! ../../public/api */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -268,8 +273,23 @@ var _api = _interopRequireDefault(__webpack_require__(/*! ../../public/api */ 21
 //
 //
 //
-var _default = { data: function data() {return { indicatorDots: true, autoplay: true, interval: 5000, duration: 500, backgrounds: [], introList: [], notice: '', advList: [], showSubject: '' };}, onLoad: function onLoad() {this.getHomeList();}, onShareAppMessage: function onShareAppMessage(res) {var advList = ['博学教育，多才的捷径', '点滴成长，我们陪在你身边'];var randomNum = Math.floor(Math.random() + 0.5);console.log(randomNum, 'randomNum');return { title: advList[randomNum], path: '/pages/index/index', imageUrl: '../../static/share.jpg', success: function success(res) {console.log("转发回调", res);}, fail: function fail(res) {console.log("失败");} };}, methods: { goDetail: function goDetail() {uni.navigateTo({ url: "/pages/detail/detail" });}, getHomeList: function getHomeList() {var _this = this;_api.default.getHomeList().then(function (res) {if (res.statusCode === 200) {console.log(res);_this.backgrounds = res.data.backgrounds;_this.introList = res.data.introList;_this.notice = res.data.notice;_this.advList = res.data.advList;_this.showSubject = res.data.showSubject;}console.log(res);});}, previewImg: function previewImg(src) {uni.previewImage({ current: src, // 当前显示图片的http链接
-        urls: [src] });} }, computed: { imgHeight: function imgHeight() {return 39 / 75 * uni.getSystemInfoSync().screenWidth;} } };exports.default = _default;
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { indicatorDots: true, autoplay: true, interval: 5000, duration: 500, backgrounds: [], introList: [], notice: '', advList: [], showSubject: '', navigationBar_fiexd: false };}, onLoad: function onLoad() {this.getHomeList();}, onPageScroll: function onPageScroll(e) {if (e.scrollTop > 800) {this.navigationBar_fiexd = true;} else {this.navigationBar_fiexd = false;}console.log(e.scrollTop);}, onShareAppMessage: function onShareAppMessage(res) {var advList = ['博学教育，多才的捷径', '点滴成长，我们陪在你身边'];var randomNum = Math.floor(Math.random() + 0.5);console.log(randomNum, 'randomNum');return { title: advList[randomNum], path: '/pages/index/index', imageUrl: '../../static/share.jpg', success: function success(res) {console.log("转发回调", res);}, fail: function fail(res) {console.log("失败");} };}, methods: { goConnact: function goConnact() {uni.makePhoneCall({ phoneNumber: '18862769971', success: function success(res) {console.log('调用成功!');}, fail: function fail(res) {console.log('调用失败!');} });}, goDetail: function goDetail() {uni.navigateTo({ url: "/pages/detail/detail" });}, getHomeList: function getHomeList() {var _this = this;_api.default.getHomeList().then(function (res) {if (res.statusCode === 200) {console.log(res);_this.backgrounds = res.data.backgrounds;_this.introList = res.data.introList;_this.notice = res.data.notice;_this.advList = res.data.advList;_this.showSubject = res.data.showSubject;}console.log(res);});}, previewImg: function previewImg(src) {
+      uni.previewImage({
+        current: src, // 当前显示图片的http链接
+        urls: [src] });
+
+    } },
+
+
+  computed: {
+    imgHeight: function imgHeight() {
+      return 39 / 75 * uni.getSystemInfoSync().screenWidth;
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

@@ -61,6 +61,11 @@
             <image :src="notice" class="inner-img" mode="widthFix" @click="goDetail"/>
         </view>
         <view class="bottom-text">到底了~</view>
+        <view class="contact" @click="goConnact" v-if="notice && navigationBar_fiexd">
+            <image src="../../static/mobile.png" mode="widthFix" class="inner-img"/>
+            <view>立即报名</view>
+<!--            <image src="../../static/join.gif" mode="widthFix"/>-->
+        </view>
 <!--		<button open-type="contact" class="contact">联系我们</button>-->
 <!--		<image src="../../static/temp_adv1.jpg" mode="widthFix"/>-->
 	</view>
@@ -79,12 +84,21 @@
 				introList: [],
                 notice: '',
                 advList: [],
-                showSubject: ''
+                showSubject: '',
+                navigationBar_fiexd: false
 			}
 		},
 		onLoad() {
 		    this.getHomeList()
 		},
+        onPageScroll(e) {
+            if (e.scrollTop > 800) {
+                this.navigationBar_fiexd = true;
+            } else {
+                this.navigationBar_fiexd = false;
+            }
+            console.log(e.scrollTop)
+        },
 		onShareAppMessage(res) {
 		    const advList = ['博学教育，多才的捷径', '点滴成长，我们陪在你身边']
             let randomNum = Math.floor(Math.random()  + 0.5)
@@ -102,6 +116,17 @@
 			}
 		},
 		methods: {
+		    goConnact () {
+                uni.makePhoneCall({
+                    phoneNumber: '18862769971',
+                    success: (res) => {
+                        console.log('调用成功!')
+                    },
+                    fail: (res) => {
+                        console.log('调用失败!')
+                    }
+                })
+            },
             goDetail () {
                 uni.navigateTo({
                     url:  `/pages/detail/detail`
@@ -233,9 +258,27 @@
         }
     }
     .bottom-text{
-        padding: 20rpx 0;
+        padding: 20rpx 0 100rpx;
         text-align: center;
         color:#9b9b9b;
         font-size: 24rpx;
+    }
+    .contact{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80rpx;
+        background-color: #325374;
+        color: #fff;
+        font-size: 24rpx;
+
+        .inner-img{
+            width: 25rpx;
+            margin-right: 10rpx;
+        }
     }
 </style>

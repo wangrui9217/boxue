@@ -102,9 +102,32 @@
   margin-right: 20rpx;
 }
 .bottom-text.data-v-2883ceb8 {
-  padding: 20rpx 0;
+  padding: 20rpx 0 100rpx;
   text-align: center;
   color: #9b9b9b;
   font-size: 24rpx;
+}
+.contact.data-v-2883ceb8 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  height: 80rpx;
+  background-color: #325374;
+  color: #fff;
+  font-size: 24rpx;
+}
+.contact .inner-img.data-v-2883ceb8 {
+  width: 25rpx;
+  margin-right: 10rpx;
 }
 
