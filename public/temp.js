@@ -1,4 +1,4 @@
-{
+let online = {
     "backgrounds": ['https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_banner1.jpg','https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_banner2.jpg'],
     "introList": [{src: 'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_intro1.jpg', tip: '资深托班辅导机构', intro: '博学教育拥有20余年的托班辅导经验,连续三年被南通市团市委指定为公益暑托班承办机构。'}, {
     src: 'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_intro2.jpg', tip: '全职老师专业辅导', intro: '博学托班全部由全职老师上课，确保每一位孩子的健康和安全，让您放心的把孩子交给我们。'}, {
@@ -11,4 +11,9 @@
         src:  'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/tuoban07.jpg'}, {title: '寒假班', detail: '博学寒假班致力于帮助家长解决青少年假期无人看管的烦恼，将根据不同年龄段的孩子开设相关课程。低年级孩子以绘画、英语、朗诵等兴趣课为主，高年级则以各学科知识点衔接夯实为主。'}],
     showSubject: '1',
     notice: 'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/bootom-notice.jpg'
+}
+
+let dev = {
+    "backgrounds": ['https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/class2lesson1work1.png', 'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/class2lesson1work2.png',
+    'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/class2lesson1work3.png']
 }
