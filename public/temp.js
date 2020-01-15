@@ -21,10 +21,10 @@ let dev = {
 }
 
 let online2 = {
-    "backgrounds": ['https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_banner1.jpg',
-        'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_banner2.jpg',
-        'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_banner3.jpg',
-        'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_banner4.jpg'],
+    "backgrounds": ['https://cdn.xiongmaolaoshi.com/chinese/temp_banner1.jpg',
+        'https://cdn.xiongmaolaoshi.com/chinese/temp_banner2.jpg',
+        'https://cdn.xiongmaolaoshi.com/chinese/temp_banner3.jpg',
+        'https://cdn.xiongmaolaoshi.com/chinese/temp_banner4.jpg'],
     "introList": [{src: 'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_intro1.jpg', tip: '资深托班辅导机构', intro: '博学教育拥有20余年的托班辅导经验,连续三年被南通市团市委指定为公益暑托班承办机构。'}, {
         src: 'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_intro2.jpg', tip: '全职老师专业辅导', intro: '博学托班全部由全职老师上课，确保每一位孩子的健康和安全，让您放心的把孩子交给我们。'}, {
         src: 'https://xiongmao-cloud.oss-cn-beijing.aliyuncs.com/chinese/temp_intro3.jpg', tip: '丰富多彩的课程设计', intro: '开设趣味数学，看图说画等多门兴趣课程,让孩子的生活多姿多彩。'}, {
