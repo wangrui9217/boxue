@@ -23,5 +23,8 @@ const util = {
 export default {
 	getHomeList(data) {
 		return util.request('/api/home', data, 'GET')
+	},
+	getActive(params) {
+		return util.request('/api/active', params, 'GET')
 	}
 }

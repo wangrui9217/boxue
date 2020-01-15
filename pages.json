@@ -10,6 +10,11 @@
 			"style": {
 				"navigationBarTitleText": "公告信息"
 			}
+		},{
+			"path": "pages/active/active",
+			"style": {
+				"navigationBarTitleText": "博学小贴士"
+			}
 		}
 	],
 	"globalStyle": {
